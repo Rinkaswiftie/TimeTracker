@@ -1,0 +1,9 @@
+const Joi = require('@hapi/joi');
+
+module.exports.trackTime = Joi.object()
+  .keys({
+    startTime: Joi.date()
+      .required(),
+    endTime: Joi.date()
+      .required()
+  });
