@@ -1,0 +1,100 @@
+table {
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}
+
+.display-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-flow: row;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.horizontal-spacer {
+  flex: 1 1 auto;
+}
+
+.padded-button {
+  margin: 10px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px;
+  text-align: center;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+tr.table-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.table-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.table-row td {
+  border-bottom-width: 0;
+}
+
+.flex-container {
+  background: #efefef;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+  padding: 10px;
+}
+
+.flex-item-left {
+  flex: 25%;
+}
+
+.flex-item-middle {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 25%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .flex-item-left, .flex-item-right, .flex-item-middle {
+    flex: 100%;
+  }
+}
+
+

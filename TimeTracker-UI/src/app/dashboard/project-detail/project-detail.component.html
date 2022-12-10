@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Track time</h1>
+<div class="padding"><mat-divider></mat-divider></div>
+<div mat-dialog-content class="container">
+  <div>
+    <mat-form-field>
+      <mat-label>Name the project</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>Client</mat-label>
+      <input matInput placeholder="Ex. ABC Company">
+    </mat-form-field>
+  </div>
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <mat-form-field floatLabel="always">
+        <mat-label>Time estimate</mat-label>
+        <input matInput type="number" step="1" placeholder="1">
+        <span matSuffix>hr(s)</span>
+      </mat-form-field>
+    </div>
+    <div class="flex-item-right">
+      <mat-form-field floatLabel="always">
+        <mat-label>Charge per hour</mat-label>
+        <input matInput type="number" step="100" placeholder="0">
+        <span matPrefix> ₹&nbsp;</span>
+        <span matSuffix>.00</span>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+<p>Estimated Bill: {{0}} ₹</p>
+<div mat-dialog-actions>
+  <button mat-button mat-raised-button mat-dialog-close color="primary">Create project</button>
+  <button mat-button mat-raised-button mat-dialog-close cdkFocusInitial color="primary">Cancel</button>
+</div>

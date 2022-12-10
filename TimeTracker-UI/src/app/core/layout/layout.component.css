@@ -1,0 +1,22 @@
+.horizontal-spacer {
+  flex: 1 1 auto;
+}
+.box{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  flex: 0 1 auto;
+}
+
+.content {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  flex: 1 1 auto;
+}
